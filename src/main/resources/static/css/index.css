@@ -1,0 +1,55 @@
+img{
+    width: 32px;
+    height: 32px;
+}
+
+.header-nav{
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+
+}
+
+ul{
+    list-style-type: none;
+}
+
+.menu-li{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-grow: 2;
+}
+
+.info-li{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    flex-grow: 2;
+}
+li a{
+    text-decoration: none;
+}
+/* 방문하지 않은 링크 */
+li a:link{
+    color: black;
+}
+/* 방문한 링크 */
+li a:visited{
+    color: black;
+}
+/* 링크를 활성화 할 때 */
+li a:active{
+    color: black;
+}
+li{
+    padding: 16px;
+}
+
+li:not(:first-child) a:hover{
+    border-bottom: 2px solid black;
+}

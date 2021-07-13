@@ -7,7 +7,10 @@ import com.example.book.springboot.web.dto.PostsSaveRequestDto;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
+@CrossOrigin(origins = "http://localhost:3000")
 @RequiredArgsConstructor
 public class PostsApiController {
 
@@ -22,9 +25,13 @@ public class PostsApiController {
     public Long update(@PathVariable Long id, @RequestBody PostUpdateRequestDto requestDto){
         return postsService.update(id,requestDto);
     }
-
     @GetMapping("/api/v1/posts/{id}")
     public PostsResponseDto findById(@PathVariable Long id){
         return postsService.findById(id);
+    }
+
+    @GetMapping("/api/v1/posts")
+    public List<PostsResponseDto.All> findAll(){
+        return postsService.findAll();
     }
 }
