@@ -3,17 +3,32 @@ package com.example.book.springboot.global.exception;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.ConstraintViolationException;
 import java.util.List;
 
 @Slf4j
 @RestControllerAdvice
 public class ExceptionController {
+
+
+    @ExceptionHandler(ConstraintViolationException.class)
+    @ResponseStatus(HttpStatus.BAD_REQUEST)
+    public ErrorResponse constraintViolationException(ConstraintViolationException e, HttpServletRequest servletRequest){
+//        log.error(e.getMessage());
+//
+//        final List<ErrorResponse.FieldError> fieldErrors = ExceptionUtil.getFieldErrors(bindingResult);
+//        return ExceptionUtil.buildFieldErrors(ErrorCode.INPUT_VALUE_INVALID,fieldErrors,servletRequest);
+        return null;
+    }
+
+
 
     @ExceptionHandler(MethodArgumentNotValidException.class)
     @ResponseStatus(HttpStatus.BAD_REQUEST)

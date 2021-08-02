@@ -15,11 +15,13 @@ public class UserSignUpDto {
     private String id;
     private String password;
     private String name;
+    private String phone;
 
-    public UserSignUpDto(String id, String password, String name) {
+    public UserSignUpDto(String id, String password, String name, String phone) {
         this.id = id;
         this.password = password;
         this.name = name;
+        this.phone = phone;
     }
     public User toEntity(){
 
@@ -27,6 +29,7 @@ public class UserSignUpDto {
                 .uid(id)
                 .passwd(PasswordController.encode(password))
                 .name(name)
+                .phone(phone)
                 .roles(Collections.singletonList("ROLE_USER"))
                 .build();
 

@@ -29,7 +29,7 @@ import java.util.List;
 public class JwtTokenProvider {
     private final long tokenValidMillSecond = 1000L * 60 * 60;
 
-    private String secretKey = "govlepel@$&";
+    private String secretKey = "jiyoung";
 
     private final UserDetailsService userDetailsService;
 

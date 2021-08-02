@@ -5,6 +5,7 @@ import com.example.book.springboot.domain.user.User;
 import com.example.book.springboot.domain.user.dto.UserLoginDto;
 import com.example.book.springboot.domain.user.dto.UserResponseDto;
 import com.example.book.springboot.domain.user.dto.UserSignUpDto;
+import com.example.book.springboot.domain.user.dto.UserUpdateDto;
 import com.example.book.springboot.domain.user.repo.UserRepository;
 import com.example.book.springboot.domain.user.service.UserService;
 import com.example.book.springboot.domain.user.service.UserServiceInf;
@@ -64,4 +65,16 @@ public class SignController {
         log.info("@ authentication.getAuth() {}",authentication.getAuthorities().toString());
         return service.getAll();
     }
+
+    @PutMapping(value = "/user")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name = "X-AUTH-TOKEN", value="access_token", required = true, dataType = "String", paramType = "header")
+    })
+    public UserResponseDto update(@RequestBody UserUpdateDto userUpdateDto) {
+        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
+        log.info("@ authentication.getAuth() {}", authentication.getAuthorities().toString());
+        log.info("@ authentication.getName(): {}", authentication.getName());
+        return service.update(userUpdateDto);
+    }
+
 }

@@ -35,7 +35,7 @@ public class SpringSecurityConfiguration extends WebSecurityConfigurerAdapter {
                 .authorizeRequests() // 여기 아래로 오는 곳은 사용권한 체크가 들어감
                 .antMatchers("/h2-console/**").permitAll() // h2 콘솔 사용하니 허가
 //                    .antMatchers("/api/v1/users/signin", "/api/v1/users/signup").permitAll() // 회원가입 로그인은 다 풀어줌
-                .antMatchers("/*/*/signin", "/*/*/signup").permitAll() // 회원가입 로그인은 다 풀어줌
+                .antMatchers("/*/*/signin", "/*/*/signup","/*/*/download").permitAll() // 회원가입 로그인은 다 풀어줌
                 .anyRequest().hasRole("USER") // 나머지는 모두 인증된 회원만 접근 가능하게
                 .and()
                 .addFilterBefore(new JwtAuthenticationFilter(jwtTokenProvider), UsernamePasswordAuthenticationFilter.class)//jwt 토큰 필터를 id 패스워드 인증 필터전에 넣는다\

@@ -3,6 +3,7 @@ package com.example.book.springboot.domain.user.service;
 import com.example.book.springboot.domain.user.User;
 import com.example.book.springboot.domain.user.dto.UserResponseDto;
 import com.example.book.springboot.domain.user.dto.UserSignUpDto;
+import com.example.book.springboot.domain.user.dto.UserUpdateDto;
 import com.example.book.springboot.domain.user.repo.UserRepository;
 import com.example.book.springboot.global.exception.AccountNotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -56,5 +57,12 @@ public class UserService implements UserServiceInf , UserDetailsService {
                                 .uid(u.getUid())
                                 .build()
                         ).collect(Collectors.toList());
+    }
+
+    @Override
+    public UserResponseDto update(UserUpdateDto userUpdateDto) {
+        User user = userRepository.findById(userUpdateDto.getId()).orElseThrow(()->new AccountNotFoundException(userUpdateDto.getId()));
+        user.changePhoneNumber(userUpdateDto.getPhone());
+        return userRepository.save(user).toResponse();
     }
 }
