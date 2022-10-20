@@ -1,0 +1,110 @@
+2021:10:26 15:58:02.487 INFO  --- [restartedMain] c.j.webserver.WebserverApplication : Starting WebserverApplication using Java 11.0.12 on DESKTOP-TMGIIUV with PID 21240 (C:\Users\cjy\Downloads\2021-10-24\webserver\build\classes\java\main started by cjy in C:\Users\cjy\Documents\springboot_gradle) 
+2021:10:26 15:58:02.491 INFO  --- [restartedMain] c.j.webserver.WebserverApplication : No active profile set, falling back to default profiles: default 
+2021:10:26 15:58:02.544 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021:10:26 15:58:02.545 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021:10:26 15:58:03.118 INFO  --- [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021:10:26 15:58:03.202 INFO  --- [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 76 ms. Found 3 JPA repository interfaces. 
+2021:10:26 15:58:04.080 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 19700 (http) 
+2021:10:26 15:58:04.091 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:10:26 15:58:04.092 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2021:10:26 15:58:04.217 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:10:26 15:58:04.218 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1672 ms 
+2021:10:26 15:58:04.258 INFO  --- [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2021:10:26 15:58:04.388 INFO  --- [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2021:10:26 15:58:04.394 INFO  --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pg_spring' 
+2021:10:26 15:58:04.526 INFO  --- [restartedMain] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021:10:26 15:58:04.586 INFO  --- [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021:10:26 15:58:04.752 INFO  --- [restartedMain] o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021:10:26 15:58:04.924 INFO  --- [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect 
+2021:10:26 15:58:05.049 INFO  --- [restartedMain] o.h.e.b.internal.EnversServiceImpl : Envers integration enabled? : true 
+2021:10:26 15:58:08.376 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.376 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "book_aud" 릴레이션 없음, 건너뜀 
+2021:10:26 15:58:08.377 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.378 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "book_rental" 릴레이션 없음, 건너뜀 
+2021:10:26 15:58:08.378 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.379 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "book_rental" 릴레이션 없음, 건너뜀 
+2021:10:26 15:58:08.380 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.380 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "book_rental_aud" 릴레이션 없음, 건너뜀 
+2021:10:26 15:58:08.381 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.382 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "user_aud" 릴레이션 없음, 건너뜀 
+2021:10:26 15:58:08.385 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.385 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "book" 테이블 없음, 무시함 
+2021:10:26 15:58:08.386 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.386 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "book_aud" 테이블 없음, 무시함 
+2021:10:26 15:58:08.387 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.387 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "book_rental" 테이블 없음, 무시함 
+2021:10:26 15:58:08.388 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.388 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "book_rental_aud" 테이블 없음, 무시함 
+2021:10:26 15:58:08.389 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.389 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "revinfo" 테이블 없음, 무시함 
+2021:10:26 15:58:08.390 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.390 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "user" 테이블 없음, 무시함 
+2021:10:26 15:58:08.391 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.391 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "user_aud" 테이블 없음, 무시함 
+2021:10:26 15:58:08.392 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : SQL Warning Code: 0, SQLState: 00000 
+2021:10:26 15:58:08.392 WARN  --- [restartedMain] o.h.e.jdbc.spi.SqlExceptionHelper : "hibernate_sequence" 시퀀스 없음, 무시함 
+2021:10:26 15:58:08.605 INFO  --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021:10:26 15:58:08.628 INFO  --- [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021:10:26 15:58:09.161 WARN  --- [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021:10:26 15:58:09.336 INFO  --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping : Adding welcome page: URL [file:D:/webapp/dist/index.html] 
+2021:10:26 15:58:09.500 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:10:26 15:58:09.537 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 19700 (http) with context path '' 
+2021:10:26 15:58:09.550 INFO  --- [restartedMain] c.j.webserver.WebserverApplication : Started WebserverApplication in 7.568 seconds (JVM running for 9.005) 
+2021:10:26 15:58:38.105 INFO  --- [http-nio-19700-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021:10:26 15:58:38.107 INFO  --- [http-nio-19700-exec-1] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2021:10:26 15:58:38.108 INFO  --- [http-nio-19700-exec-1] o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
+2021:10:26 18:15:10.743 INFO  --- [restartedMain] c.j.webserver.WebserverApplication : Starting WebserverApplication using Java 11.0.12 on DESKTOP-TMGIIUV with PID 19416 (C:\Users\cjy\Downloads\2021-10-24\webserver\build\classes\java\main started by cjy in C:\Users\cjy\Documents\springboot_gradle) 
+2021:10:26 18:15:10.746 INFO  --- [restartedMain] c.j.webserver.WebserverApplication : No active profile set, falling back to default profiles: default 
+2021:10:26 18:15:10.800 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021:10:26 18:15:10.801 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021:10:26 18:15:11.421 INFO  --- [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021:10:26 18:15:11.505 INFO  --- [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72 ms. Found 3 JPA repository interfaces. 
+2021:10:26 18:15:12.404 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 19700 (http) 
+2021:10:26 18:15:12.419 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:10:26 18:15:12.420 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2021:10:26 18:15:12.544 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:10:26 18:15:12.544 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1743 ms 
+2021:10:26 18:15:12.585 INFO  --- [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2021:10:26 18:15:12.717 INFO  --- [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2021:10:26 18:15:12.724 INFO  --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pg_spring' 
+2021:10:26 18:15:12.849 INFO  --- [restartedMain] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021:10:26 18:15:12.905 INFO  --- [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021:10:26 18:15:13.078 INFO  --- [restartedMain] o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021:10:26 18:15:13.246 INFO  --- [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect 
+2021:10:26 18:15:13.356 INFO  --- [restartedMain] o.h.e.b.internal.EnversServiceImpl : Envers integration enabled? : true 
+2021:10:26 18:15:14.721 INFO  --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021:10:26 18:15:14.733 INFO  --- [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021:10:26 18:15:15.163 WARN  --- [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021:10:26 18:15:15.335 INFO  --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping : Adding welcome page: URL [file:D:/webapp/dist/index.html] 
+2021:10:26 18:15:15.490 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:10:26 18:15:15.529 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 19700 (http) with context path '' 
+2021:10:26 18:15:15.542 INFO  --- [restartedMain] c.j.webserver.WebserverApplication : Started WebserverApplication in 5.314 seconds (JVM running for 6.662) 
+2021:10:26 18:15:32.550 INFO  --- [restartedMain] c.j.webserver.WebserverApplication : Starting WebserverApplication using Java 11.0.12 on DESKTOP-TMGIIUV with PID 17804 (C:\Users\cjy\Downloads\2021-10-24\webserver\build\classes\java\main started by cjy in C:\Users\cjy\Documents\springboot_gradle) 
+2021:10:26 18:15:32.554 INFO  --- [restartedMain] c.j.webserver.WebserverApplication : No active profile set, falling back to default profiles: default 
+2021:10:26 18:15:32.610 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable 
+2021:10:26 18:15:32.611 INFO  --- [restartedMain] o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG' 
+2021:10:26 18:15:33.275 INFO  --- [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode. 
+2021:10:26 18:15:33.356 INFO  --- [restartedMain] o.s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 3 JPA repository interfaces. 
+2021:10:26 18:15:34.129 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat initialized with port(s): 19700 (http) 
+2021:10:26 18:15:34.138 INFO  --- [restartedMain] o.a.catalina.core.StandardService : Starting service [Tomcat] 
+2021:10:26 18:15:34.139 INFO  --- [restartedMain] o.a.catalina.core.StandardEngine : Starting Servlet engine: [Apache Tomcat/9.0.54] 
+2021:10:26 18:15:34.264 INFO  --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring embedded WebApplicationContext 
+2021:10:26 18:15:34.265 INFO  --- [restartedMain] o.s.b.w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1653 ms 
+2021:10:26 18:15:34.297 INFO  --- [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Starting... 
+2021:10:26 18:15:34.402 INFO  --- [restartedMain] com.zaxxer.hikari.HikariDataSource : HikariPool-1 - Start completed. 
+2021:10:26 18:15:34.410 INFO  --- [restartedMain] o.s.b.a.h.H2ConsoleAutoConfiguration : H2 console available at '/h2-console'. Database available at 'jdbc:postgresql://localhost:5432/pg_spring' 
+2021:10:26 18:15:34.521 INFO  --- [restartedMain] o.h.jpa.internal.util.LogHelper : HHH000204: Processing PersistenceUnitInfo [name: default] 
+2021:10:26 18:15:34.567 INFO  --- [restartedMain] org.hibernate.Version : HHH000412: Hibernate ORM core version 5.4.32.Final 
+2021:10:26 18:15:34.700 INFO  --- [restartedMain] o.h.annotations.common.Version : HCANN000001: Hibernate Commons Annotations {5.1.2.Final} 
+2021:10:26 18:15:34.798 INFO  --- [restartedMain] org.hibernate.dialect.Dialect : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect 
+2021:10:26 18:15:34.883 INFO  --- [restartedMain] o.h.e.b.internal.EnversServiceImpl : Envers integration enabled? : true 
+2021:10:26 18:15:36.151 INFO  --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform] 
+2021:10:26 18:15:36.160 INFO  --- [restartedMain] o.s.o.j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default' 
+2021:10:26 18:15:36.571 WARN  --- [restartedMain] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning 
+2021:10:26 18:15:36.737 INFO  --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping : Adding welcome page: URL [file:D:/webapp/dist/index.html] 
+2021:10:26 18:15:36.878 INFO  --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer : LiveReload server is running on port 35729 
+2021:10:26 18:15:36.916 INFO  --- [restartedMain] o.s.b.w.e.tomcat.TomcatWebServer : Tomcat started on port(s): 19700 (http) with context path '' 
+2021:10:26 18:15:36.930 INFO  --- [restartedMain] c.j.webserver.WebserverApplication : Started WebserverApplication in 4.912 seconds (JVM running for 6.196) 
+2021:10:26 18:15:43.749 INFO  --- [http-nio-19700-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/] : Initializing Spring DispatcherServlet 'dispatcherServlet' 
+2021:10:26 18:15:43.750 INFO  --- [http-nio-19700-exec-1] o.s.web.servlet.DispatcherServlet : Initializing Servlet 'dispatcherServlet' 
+2021:10:26 18:15:43.751 INFO  --- [http-nio-19700-exec-1] o.s.web.servlet.DispatcherServlet : Completed initialization in 1 ms 
